@@ -1,0 +1,17 @@
+node_modules/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+keystore/
+.DS_Store
+# Foundry (Phase 2)
+contracts/out/
+contracts/cache/
+contracts/broadcast/

@@ -64,3 +64,11 @@
 ## 검증 기준 (Phase 0)
 - [x] Phase별 작업·완료 기준·승인 지점 정의
 - [ ] 사용자 승인
+
+## Phase 1 결과 메모 (2026-10-26)
+
+- 패키지 매니저는 pnpm이 아니라 **npm**(`package-lock.json`)을 사용한다. TypeScript는 npm에서 6.0.3으로 해석되어 사용(7.x는 미채택).
+- `eslint-config-next`는 ESLint 10 peer 미지원으로 제외, `typescript-eslint` strict 구성 사용.
+- 마이그레이션 CLI는 `scripts/migrate.mts`, 롤백은 `--confirm` 필수.
+- 스키마에 `operators`, `operator_sessions`, `login_attempts`(Phase 6용)가 추가되었다.
+- 자세한 현황과 알려진 위험은 루트 `README.md` 참고.
